@@ -232,6 +232,25 @@ function itemInCommon(arr1, arr2){
     return false
 }
 
+function bubbleSort(array){
+    for(let i = array.length - 1; i > 0; i--){
+        for(let j =0; j<i;j++){
+            if(array[j] > array[j+1]){
+                let temp = array[j]
+                array[j] = array[j+1]
+                array[j+1] = temp
+            }
+        }
+    }
+    return array
+}
+
+function factorial(n){
+    if(n===1) return 1
+    return n* factorial(n-1)
+}
+
+
 function itemInCommon(arr1, arr2){
     let obj = {}
     for(let i = 0; i < arr1.length; i++){
